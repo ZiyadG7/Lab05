@@ -1,7 +1,27 @@
 public class Sorter{
-    void sort(int[] arr){
-        SelectionSort(arr);
+    void sort(int arr[]){
+        insertionSort(arr);
     }
+
+    void insertionSort(int arr[]){
+            int i, j, temp;
+                for (i = 1; i < arr.length; i++)
+                {
+                    j = i - 1;
+                    while (j >= 0 && arr[j] < arr[i] )
+                    {
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                        i=j;
+                        j--;
+            
+                    }
+                }
+            for(int x=0; x<arr.length;x++){
+                System.out.println(arr[x]);   
+              }
+            }
     public static void main(String[] args) {
         
     }
