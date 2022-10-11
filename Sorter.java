@@ -1,25 +1,27 @@
 public class Sorter{
+    void sort(int arr[]){
+        insertionSort(arr);
+    }
+
     void insertionSort(int arr[]){
-        int[] a = {100,12,31, 5, 4, 3, 2, 1 };
             int i, j, temp;
-                for (i = 1; i < a.length; i++)
+                for (i = 1; i < arr.length; i++)
                 {
                     j = i - 1;
-                    while (j >= 0 && a[j] < a[i] )
+                    while (j >= 0 && arr[j] < arr[i] )
                     {
-                        temp = a[i];
-                        a[i] = a[j];
-                        a[j] = temp;
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
                         i=j;
                         j--;
             
                     }
                 }
-            for(int x=0; x<a.length;x++){
-                System.out.println(a[x]);   
+            for(int x=0; x<arr.length;x++){
+                System.out.println(arr[x]);   
               }
             }
-    }
     public static void main(String[] args) {
         
     }
