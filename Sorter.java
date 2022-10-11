@@ -1,4 +1,7 @@
 public class Sorter{
+    void sort(int[] arr){
+        SelectionSort(arr);
+    }
     public static void main(String[] args) {
         
     }
